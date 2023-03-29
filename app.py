@@ -19,9 +19,9 @@ from src.input_data import InputData
 
 from model import PredictScore
 
+
 def lambda_handler(event, context):
-    """Sample pure Lambda function
-    """
+    """Sample pure Lambda function"""
 
     print(event)
     predicted_score = PredictScore(event)
@@ -34,6 +34,3 @@ def lambda_handler(event, context):
             }
         ),
     }
-
-
-
